@@ -1,3 +1,12 @@
+const button = document.querySelectorAll('button');
+button.forEach((button) =>{
+    button.addEventListener('click',() => alert(
+        playRound(button.textContent,computerPlay())
+            )
+        )
+    }
+)
+
 function computerPlay(){
     action = ["scissor","paper","rock"];
     num = Math.floor(Math.random() * 3);
@@ -61,4 +70,3 @@ function game(){
         return "Player lose"
     }
 }
-console.log(game());
