@@ -5,14 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="func.js" defer></script>
     <script>
-        //alert(game());
+        //alert(playRound("paper","rock").playerResult);
     </script>
 </head>
 <body>
-    <button>scissor</button>
-    <button>paper</button>
-    <button>rock</button>
+    <div class="header">
+        <h1>Welcome To Scissor-Paper-Rock!</h1>
+    </div>
+    <div class='container' id="action_container">
+        <button id="scissor">scissor</button>
+        <button id="paper">paper</button>
+        <button id="rock">rock</button>
+    </div>
+    <div class='container'>
+        <button id="new_game">New game!</button>
+    </div>
+    <div class='container'>
+        <h1>Score board</h1>
+    </div>
+    <div class="container">
+        <table id="result">
+            <tr>
+                <th>Player</th>
+                <th>Computer</th>
+                <th>Result</th>
+                <th>Player Score</th>
+                <th>Com Score</th>
+                <th>Player Total Score</th>
+                <th>Com Total Score</th>
+            </tr>
+        </table>
+        <h2 id="winner"></h2>
+    </div>
 </body>
 </html>
